@@ -7,11 +7,11 @@ import styles from "./SaveComment.module.css";
 import { getNameInitials } from "../utils";
 
 const users = [
-  "John Smith",
-  "Emma Johnson",
-  "Michael Davis",
-  "Sophia Lee",
-  "Benjamin Martinez",
+  "Arnold Papis",
+  "Bob Haylett",
+  "Dan Jenkin",
+  "Holmes Pond",
+  "James Pond",
 ];
 const SaveComment = ({ onSaveClick, onCancelClick, user }) => {
   const [comment, setComment] = useState("");
