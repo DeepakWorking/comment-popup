@@ -1,0 +1,26 @@
+.saveWrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px;
+}
+.avatar {
+}
+.saveCommentSection {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  padding: 10px;
+}
+.commentSection {
+  min-height: 80px !important;
+}
+.buttonGroup {
+  display: flex;
+  gap: 10px;
+}
+.cancelButton {
+  border: 1px solid #ccc !important;
+  color: #25252d !important;
+}

@@ -1,0 +1,57 @@
+.selectWrapper {
+  position: relative;
+}
+.selectButton {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #ccc !important;
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.selectButton:hover {
+  background-color: #fff !important;
+}
+.selectOptionsWrapper {
+  position: absolute !important;
+  top: 100%;
+  overflow: auto;
+  border: 1px solid #ccc;
+  border-radius: 5px !important;
+  max-height: 250px;
+  background-color: #fff;
+  width: 100%;
+  transform: translateY(4px);
+  z-index: 1;
+}
+.selectItem {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: flex-start;
+  padding: 10px;
+}
+.selectItem:hover {
+  background-color: #ddf1ff;
+}
+.selectTagTypgraphy {
+  flex: 1 1 20%;
+}
+.selectArrowIndicator {
+  flex: 1 1 20%;
+}
+.selectTagItems {
+  flex: 1 1 80%;
+}
+.chip {
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+}
+.clearIcon {
+  font-size: 20px;
+}
+.chipItemWrapper {
+  display: flex;
+  align-items: center;
+}

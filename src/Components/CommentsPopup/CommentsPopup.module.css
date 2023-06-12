@@ -1,0 +1,24 @@
+.commentPopupWrapper {
+  width: 60%;
+  min-height: 600px;
+}
+.commentPopupHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.popupTitle {
+}
+.chip {
+  border-radius: 5px !important;
+  color: #25252d !important;
+}
+.rightHeader {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.clearIcon {
+  font-weight: 400;
+  font-size: 20px;
+}

@@ -1,0 +1,19 @@
+.commentListWrapper {
+  max-height: 600px;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+.commentListItem {
+  align-items: flex-start !important;
+  min-height: 100px;
+}
+.taggedItems {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 5px;
+}
+.chip {
+  border-radius: 5px !important;
+  color: #25252d !important;
+}
