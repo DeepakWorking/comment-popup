@@ -17,3 +17,9 @@
   border-radius: 5px !important;
   color: #25252d !important;
 }
+.noCommentSheet {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+}

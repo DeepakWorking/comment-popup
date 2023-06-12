@@ -1,3 +1,4 @@
+import { useEffect, useState, useRef } from "react";
 import Modal from "@mui/joy/Modal";
 import ModalDialog from "@mui/joy/ModalDialog";
 import Typography from "@mui/joy/Typography";
@@ -5,7 +6,7 @@ import Chip from "@mui/joy/Chip";
 import IconButton from "@mui/joy/IconButton";
 import Clear from "@mui/icons-material/Clear";
 import Comments from "../Comments/Comments";
-import { useEffect, useState, useRef } from "react";
+import CircularProgress from "@mui/joy/CircularProgress";
 import SaveComment from "../SaveComment/SaveComment";
 import styles from "./CommentsPopup.module.css";
 
@@ -14,11 +15,13 @@ const LOGGEDINUSER = "Deepak Pandey";
 const CommentPopup = ({ showPopup, closePopup }) => {
   const [comments, setComments] = useState([]);
   const commentRef = useRef(null);
-
+  const [loading, setLoading] = useState(false);
   const fetchComments = async () => {
+    setLoading(true);
     const response = await fetch(
       "https://mocki.io/v1/b0c7d7ea-5d09-4b9c-8d4b-c1b40cc39bc9"
     );
+    setLoading(false);
     const data = await response.json();
     setComments(data.comments);
   };
@@ -55,7 +58,7 @@ const CommentPopup = ({ showPopup, closePopup }) => {
             </IconButton>
           </div>
         </div>
-        <Comments commentList={comments} ref={commentRef} />
+        <Comments commentList={comments} ref={commentRef} loading />
         <SaveComment
           onSaveClick={handleSaveComment}
           onCancelClick={closePopup}
